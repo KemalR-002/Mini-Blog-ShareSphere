@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page ShareSphere</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="relative flex min-h-screen flex-col bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg');">
+        
+        <!-- Header/Navbar -->
+        <header class="sticky top-0 z-50 w-full border-b border-gray-300 bg-emerald-200/50 backdrop-blur-sm">
+             <div class="container flex h-16 items-center px-4">
+                 <div class="mr-4 hidden md:flex ">
+                     <a href="index.html" class="text-2xl font-bold text-black mr-6 space-x-2">ShareSphere</a>
+                     <nav class="flex items-center space-x-6 text-sm font-medium">
+                         <a href="index.html" class="text-gray-700 hover:text-emerald-600 ">Home</a>
+                         <a href="#" class="text-gray-700 hover:text-emerald-600">Suggested</a>
+                        </nav>
+                    </div>
+                    <div class="ml-auto flex items-center space-x-4">
+                        <div class="relative">
+                            <input type="text" placeholder="Search..." class="pl-8 pr-4 py-2 rounded-md bg-white border border-gray-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 text-sm">
+                            <svg class="w-4 h-4 absolute left-2 top-1/2 transform -translate-y-1/2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                        </div>
+                        <a href="login-page.html" class="text-gray-700 hover:text-emerald-600 text-sm font-medium hidden md:inline">Log In</a>
+                        <a href="register-page.html" class="bg-emerald-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-emerald-700">Sign Up</a>
+                    </div>
+                </div>
+            </header>
+
+        <!-- Register Form -->
+        <main class="flex-grow flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8 bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg');">
+            <div class="w-full max-w-md p-8 space-y-6 bg-white rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold text-center text-gray-800">Sign Up for ShareSphere</h2>
+                <form class="space-y-4">
+                    <div>
+                        <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
+                        <input type="text" id="username" class="mt-1 w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                        <input type="email" id="email" class="mt-1 w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500" required>
+                    </div>
+                    <div>
+                        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                        <input type="password" id="password" class="mt-1 w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500" required>
+                    </div>
+                    <div>
+                        <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-emerald-600 hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500">Sign Up</button>
+                    </div>
+                    <div class="text-sm text-center">
+                        Already have an account? <a href="login-page.html" class="font-medium text-emerald-600 hover:text-emerald-500">Log In</a>
+                    </div>
+                    <div class="mt-6">
+                        <div class="relative">
+                            <div class="absolute inset-0 flex items-center">
+                                <div class="w-full border-t border-gray-300"></div>
+                            </div>
+                            <div class="relative flex justify-center text-sm">
+                                <span class="px-2 bg-white text-gray-500">Or sign up with</span>
+                            </div>
+                        </div>
+                        <div class="mt-6 grid grid-cols-2 gap-4">
+                            <button type="button" class="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-500 hover:bg-gray-200">
+                                <svg class="w-5 h-5 mr-2" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512"><path fill="currentColor" d="M488 261.8c0-17.4-1.5-34.1-4.3-50.4H249v95.5h134.9c-5.8 31.2-23.4 57.6-50 75.3v62.4h80.7c47.3-43.6 74.4-107.9 74.4-182.8zM249 492c67.2 0 123.7-22.1 165-59.9l-80.7-62.4c-22.4 15-51 24-84.3 24-64.8 0-119.7-43.7-139.4-102.4H28.6v64.1C70.2 445.7 154 492 249 492zM109.6 297.7c-4.8-14.3-7.6-29.6-7.6-45.2s2.8-30.9 7.6-45.2V143H28.6C10.3 181.1 0 222.1 0 264s10.3 82.9 28.6 121l81-87.3zM249 100.3c35.7 0 67.8 12.3 93.1 36.4l69.8-69.8C366.1 34.7 309.6 12 249 12 154 12 70.2 58.3 28.6 143l81 87.3c19.7-58.7 74.6-102.4 139.4-102.4z"></path></svg>
+                                Google
+                            </button>
+                            <button type="button" class="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-500 hover:bg-gray-200">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+                                    <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+                                    <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+                                </svg>
+                                <span class="ml-2">Apple</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+        
+        <!-- Footer -->
+        <div class="mt-auto">
+            <footer class="bg-emerald-200/50 backdrop-blur-sm border-t border-gray-300">
+                <div class="container mx-auto px-4 py-6 text-center text-sm text-gray-700">
+                    &copy; 2024 ShareSphere. All rights reserved.
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
